@@ -158,6 +158,9 @@ tests:
       OO_SECURITY_CONTEXT: restricted
     test:
     - ref: optional-operators-operator-sdk
+    - ref: wait
+    - ref: cucushift-installer-wait
+    - ref: clusterbot-wait
     - as: test
       cli: latest
       commands: |
@@ -180,6 +183,9 @@ tests:
       OO_SECURITY_CONTEXT: restricted
     test:
     - ref: optional-operators-operator-sdk
+    - ref: wait
+    - ref: cucushift-installer-wait
+    - ref: clusterbot-wait
     - as: test
       cli: latest
       commands: |
