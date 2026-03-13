@@ -1,6 +1,6 @@
 chain:
   as: cucushift-installer-rehearse-gcp-ipi-provision
-  steps: 
+  steps:
     - ref: gcp-provision-minimal-permission
     - chain: ipi-conf-gcp
     - ref: ipi-conf-gcp-osdisk-disktype-compute
@@ -12,6 +12,7 @@ chain:
     - ref: cucushift-installer-check-gcp-disktype-compute
     - ref: cucushift-installer-check-gcp-disktype-control-plane
     - ref: cucushift-installer-check-gcp-osimage
+    - ref: rhcos-conf-osstream
     - ref: enable-qe-catalogsource
     - chain: cucushift-installer-check
   documentation: |-

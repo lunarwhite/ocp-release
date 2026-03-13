@@ -41,8 +41,9 @@ chain:
   - ref: idp-htpasswd
   - ref: cucushift-pre
   - ref: openshift-e2e-test-clusterinfra-qe
-  - ref: cucushift-e2e
   - ref: openshift-extended-test
+  - ref: wait
+  - ref: cucushift-e2e
   - ref: openshift-e2e-test-qe-report
   documentation: |-
     Execute presubmit regression testing for cluster_infrastructure team, the testing include cucushift, openshift-test-private, cluster-api-actuator-pkg.
